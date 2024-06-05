@@ -14,9 +14,7 @@ const CartSlice = createSlice({
             const product = state.find(data=>data.detail.id===action.payload.detail.id)
            if(product){
            product.qte = product.qte + 1
-           console.log(state);
            }else{
-
                state.push(action.payload); 
            }
         },
@@ -24,9 +22,7 @@ const CartSlice = createSlice({
             const product = state.find(data=>data.detail.id===action.payload.detail.id)
            if(product){
            product.qte = product.qte - 1
-           console.log(state);
            }else{
-
                state.push(action.payload); 
            }
         },
