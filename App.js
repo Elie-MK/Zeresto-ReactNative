@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import { createStackNavigator } from "@react-navigation/stack";
-import { Appearance } from "react-native";
+import { Appearance, Platform } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { KeyboardAvoidingView, StyleSheet, Text, View } from "react-native";
 
